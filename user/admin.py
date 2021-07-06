@@ -1,8 +1,5 @@
 from django.contrib import admin
-from .models.user import User
-from .models.follow import Follow
-from .models.like_post import Like_Post
-from .models.like_comment import Like_Comment
+from .models import User
 
 # Register your models here.
 
@@ -22,7 +19,3 @@ class UserAdmin(admin.ModelAdmin):
         'username',
         'name'
     )
-
-admin.site.register(Follow)
-admin.site.register(Like_Comment)
-admin.site.register(Like_Post)

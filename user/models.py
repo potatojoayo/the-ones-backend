@@ -41,8 +41,13 @@ class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(max_length=255, null=False, unique=True) 
     name = models.CharField(max_length=10, null=False)
     username = models.CharField(max_length=10, null=False)
-    birthday = models.DateField(default='2000-01-01')
-    gender = models.CharField(max_length=10, default='')
+    birthday = models.DateField(null=True)
+    gender = models.CharField(max_length=10, null=True)
+    followings = models.ManyToManyField('self', related_name='followers', symmetrical=False) 
+    like_posts = models.ManyToManyField('post.Post', related_name='likers')
+    like_comments = models.ManyToManyField('comment.Comment', related_name='likers')
+    favorite_books = models.ManyToManyField('book.Book', related_name='favorings')
+    favorite_movies = models.ManyToManyField('movie.Movie', related_name='favorings')
 
     is_active = models.BooleanField(default=True)    
     is_admin = models.BooleanField(default=False)    
@@ -52,4 +57,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['name','username']
+
+    def __str__(self):
+        return self.email
 
