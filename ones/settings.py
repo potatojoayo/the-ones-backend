@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'movie',
     'post',
     'comment',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
